@@ -93,7 +93,7 @@ API tersedia di `http://127.0.0.1:8000/api`.
 
 ## API Endpoints
 
-Base URL: `/api` | Rate Limit: **60 requests/menit per IP**
+Base URL: `/api` | Rate Limit: **25 requests/menit per IP**
 
 ### GET /api/ships
 
@@ -223,5 +223,5 @@ PATCH /api/maintenance-logs/42/complete
 
 ## Rate Limiting
 
-Semua endpoint `/api` dibatasi **60 requests per menit per IP**.
+Semua endpoint `/api` dibatasi **25 requests per menit per IP**.
 Saat limit tercapai, response `429 Too Many Requests` dikembalikan dengan header `Retry-After`.
